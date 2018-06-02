@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+
+    <!-- Google Font Styles -->
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Black|Roboto:300" rel="stylesheet">
+
+    <!--My CSS-->
+    <link href="style.css" rel="stylesheet">
+    <title>Giphy Website (was bored lol)</title>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!--Navigation bar-->
+        <nav class="navbar sticky-top navbar-expand-lg">
+            <a class="navbar-brand" href="#">
+                <img src="assets/images/logo.svg" class="d-inline-block align-top" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Reactions <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Entertainment</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sports</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Stickers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Artists</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <button class="btn btn-outline-secondary my-2 my-sm-0 nav-button btn-lg" type="submit"><img src="assets/images/icons/upload.svg" class="nav-icon-extra-margin"></button>
+                    <button class="btn btn-outline-secondary my-2 my-sm-0 nav-button btn-lg" type="submit"><img src="assets/images/icons/create.svg" class="nav-icon-extra-margin"></button>
+                </form>
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span><img src="assets/images/icons/eyes.gif" class="dropdown-button-gif"></span>
+                            <img src="assets/images/icons/user.svg" class="nav-icon">
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#">Settings</a>
+                            <a class="dropdown-item" href="#">Favourites</a>
+                            <a class="dropdown-item" href="#">Log Out</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!--big search bar-->
+        <div class="input-group input-group-lg">
+            <input type="text" class="form-control" placeholder="Search..." aria-label="Search..." aria-describedby="basic-addon2" id="searchtext">
+            <div class="input-group-append">
+                <button class="btn btn-outline-secondary" type="button" id="searchgifs"><img src="assets/images/icons/search.svg" class="nav-icon-extra-margin"></button>
+            </div>
+        </div>
+
+        <!--Cols for gifs and search history-->
+        <div class="row">
+            <div class="col-sm-10">
+                <h2 id="search-term-display">Start Giphing!</h2>
+                <div class="inner">
+                    <!--Images will appear inside here-->
+                </div>
+            </div>
+            <div class="col-sm-2">
+                <div class="history history-div">
+                    <h6 class="text-center">HISTORY</h6>
+                    <!--Browsing will appear inside here-->
+                </div>
+            </div>
+        </div>
+
+       <!--This image disappears when query is run-->
+        <br>
+        <div class="text-center disappear">
+            <img src="assets/images/landing-pg.gif" class="img-fluid" alt="Responsive image">
+        </div>
+
+    </div>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="assets/js/app.js"></script>
+</body>
+</html>
